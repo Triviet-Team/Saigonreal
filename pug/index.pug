@@ -1,0 +1,589 @@
+extends _inc
+
+block article
+  section.search
+    .box-search
+      .box-search-type
+        h4.active bất động sản bán
+        h4 bất động sản cho thuê
+      .box-search-form
+        input(type="text", placeholder="Nhập địa điểm, địa chỉ . . .")
+        select
+          option(value="") Loại bất động sản
+          option(value="") Nhà
+          option(value="") Đất
+          option(value="") Biệt thự
+        select
+          option(value="") Tỉnh / Thành phố
+          option(value="") TP. Hồ Chí Minh
+          option(value="") Hà Nội
+          option(value="") Đà Nẵng
+        select
+          option(value="") Quận / Huyện
+          option(value="") Quận 1
+          option(value="") Quận 2
+          option(value="") Quận 3
+        select
+          option(value="") Phường / Xã
+          option(value="") Phường An Phú
+          option(value="") Phường Mỹ Đình 2
+          option(value="") Phường Thạnh Mỹ Lợi
+        select
+          option(value="") Đường / Phố
+          option(value="") Đường Nguyễn Thái Bình
+          option(value="") Phố Huế
+          option(value="") Đường Nguyễn Thị Định
+        button(type="submit") Tìm kiếm
+        
+  section.article-top
+    .container
+      .left
+        .hot-news
+          .title-page
+            h4 tin tức nổi bật
+            a(href='tin-tuc.html') Xem tất cả tin tức
+              i.mdi.mdi-arrow-right
+
+          .hot-news-zone
+            .box-hot-news
+              .box-hot-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-hot-news-detail
+                h5
+                  a(href='chi-tiet-tin-tuc.html', title="Basketball Stars Face Off in Ultimate Playoff Beard Battle")
+                    | Basketball Stars Face Off in Ultimate Playoff Beard Battle
+                h6 27/06/2019
+                p Prince Edward Island, Canada Prince Edward Island is a Canadian province. It is one of the three Maritime provinces and it is the smallest in...
+              .box-hot-news-btn
+                a(href='chi-tiet-tin-tuc.html') Xem thêm
+                  i.mdi.mdi-arrow-right
+
+            .box-hot-news
+              .box-hot-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-hot-news-detail
+                h5
+                  a(href='chi-tiet-tin-tuc.html', title="Basketball Stars Face Off in Ultimate Playoff Beard Battle")
+                    | Basketball Stars Face Off in Ultimate Playoff Beard Battle
+                h6 27/06/2019
+                p Prince Edward Island, Canada Prince Edward Island is a Canadian province. It is one of the three Maritime provinces and it is the smallest in...
+              .box-hot-news-btn
+                a(href='chi-tiet-tin-tuc.html') Xem thêm
+                  i.mdi.mdi-arrow-right
+
+            .box-hot-news
+              .box-hot-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-hot-news-detail
+                h5
+                  a(href='chi-tiet-tin-tuc.html', title="Basketball Stars Face Off in Ultimate Playoff Beard Battle")
+                    | Basketball Stars Face Off in Ultimate Playoff Beard Battle
+                h6 27/06/2019
+                p Prince Edward Island, Canada Prince Edward Island is a Canadian province. It is one of the three Maritime provinces and it is the smallest in...
+              .box-hot-news-btn
+                a(href='chi-tiet-tin-tuc.html') Xem thêm
+                  i.mdi.mdi-arrow-right
+
+            .box-hot-news
+              .box-hot-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-hot-news-detail
+                h5
+                  a(href='chi-tiet-tin-tuc.html', title="Basketball Stars Face Off in Ultimate Playoff Beard Battle")
+                    | Basketball Stars Face Off in Ultimate Playoff Beard Battle
+                h6 27/06/2019
+                p Prince Edward Island, Canada Prince Edward Island is a Canadian province. It is one of the three Maritime provinces and it is the smallest in...
+              .box-hot-news-btn
+                a(href='chi-tiet-tin-tuc.html') Xem thêm
+                  i.mdi.mdi-arrow-right
+
+            .box-hot-news
+              .box-hot-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-hot-news-detail
+                h5
+                  a(href='chi-tiet-tin-tuc.html', title="Basketball Stars Face Off in Ultimate Playoff Beard Battle")
+                    | Basketball Stars Face Off in Ultimate Playoff Beard Battle
+                h6 27/06/2019
+                p Prince Edward Island, Canada Prince Edward Island is a Canadian province. It is one of the three Maritime provinces and it is the smallest in...
+              .box-hot-news-btn
+                a(href='chi-tiet-tin-tuc.html') Xem thêm
+                  i.mdi.mdi-arrow-right
+
+            .box-hot-news
+              .box-hot-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-hot-news-detail
+                h5
+                  a(href='chi-tiet-tin-tuc.html', title="Basketball Stars Face Off in Ultimate Playoff Beard Battle")
+                    | Basketball Stars Face Off in Ultimate Playoff Beard Battle
+                h6 27/06/2019
+                p Prince Edward Island, Canada Prince Edward Island is a Canadian province. It is one of the three Maritime provinces and it is the smallest in...
+              .box-hot-news-btn
+                a(href='chi-tiet-tin-tuc.html') Xem thêm
+                  i.mdi.mdi-arrow-right
+
+        .product-new
+          .title-page
+            h4 Bất động sản mới nhất
+
+          .product-new-zone
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5
+                  i.mdi.mdi-credit-card
+                  | Giá:
+                  span 750 triệu
+                h5 
+                  i.mdi.mdi-floor-plan
+                  | Diện tích: 90m2
+                h5
+                  i.mdi.mdi-map-marker-outline
+                  | Địa chỉ: Bình Thanh - TP.Hồ Chí Minh
+              .box-product-date
+                h6 27/06/2019
+
+            
+      .right
+        .product-view
+          .title-page
+            h4 BĐS xem nhiều
+          .product-view-zone
+            ul
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              li
+                a(href='chi-tiet-san-pham.html', title='Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447')
+                  | Bán đất đường An Hạ, 90m2, gần cầu Xáng, 750 triệu LH 0981442447
+              
+        .social
+          .title-page
+            h4 Theo dõi chúng tôi
+          .social-zone
+            .box-social.facebook
+              .box-social-name
+                i.mdi.mdi-facebook
+                span Facebook
+              .box-social-btn
+                a(href='#') Thích
+            
+            .box-social.youtube
+              .box-social-name
+                i.mdi.mdi-youtube
+                span Youtube
+              .box-social-btn
+                a(href='#') Đăng ký
+            
+            .box-social.instagram
+              .box-social-name
+                i.mdi.mdi-instagram
+                span Instagram
+              .box-social-btn
+                a(href='#') Theo dõi
+            
+        .product-ward
+          .title-page
+            h4 BẤT ĐỘNG SẢN THEO QUẬN
+          .product-ward-zone
+            ul
+              li
+                a(href='san-pham.html') Bất động sản quận 1
+              li
+                a(href='san-pham.html') Bất động sản quận 2
+              li
+                a(href='san-pham.html') Bất động sản quận 3
+              li
+                a(href='san-pham.html') Bất động sản quận 4
+              li
+                a(href='san-pham.html') Bất động sản quận 5
+              li
+                a(href='san-pham.html') Bất động sản quận 6
+              li
+                a(href='san-pham.html') Bất động sản quận 7
+              li
+                a(href='san-pham.html') Bất động sản quận 8
+              li
+                a(href='san-pham.html') Bất động sản quận 9
+              li
+                a(href='san-pham.html') Bất động sản quận 10
+              li
+                a(href='san-pham.html') Bất động sản quận 11
+              li
+                a(href='san-pham.html') Bất động sản quận 12
+              li
+                a(href='san-pham.html') Bất động sản quận 13
+              li
+                a(href='san-pham.html') Bất động sản quận 14
+              li
+                a(href='san-pham.html') Bất động sản quận 15
+              li
+                a(href='san-pham.html') Bất động sản quận 16
+              li
+                a(href='san-pham.html') Bất động sản quận 17
+              li
+                a(href='san-pham.html') Bất động sản quận 18
+              li
+                a(href='san-pham.html') Bất động sản quận 19
+              li
+                a(href='san-pham.html') Bất động sản quận 20
+              li
+                a(href='san-pham.html') Bất động sản quận 21
+              li
+                a(href='san-pham.html') Bất động sản quận 22
+              li
+                a(href='san-pham.html') Bất động sản quận 23
+              li
+                a(href='san-pham.html') Bất động sản quận 23
+              
+  section.news-letter
+    .box-news-letter
+      h3 ĐĂNG KÝ EMAIL ĐỂ NHẬN TIN KHI CÓ BẤT ĐỘNG SẢN MỚI NGAY !
+      form
+        input(type="email", placeholder="Email của bạn . . .")
+        select
+          option(value="") Hình thức BĐS
+          option(value="") Bất động sản bán
+          option(value="") Bất động sản cho thuê
+        select
+          option(value="") Vị trí quan tâm
+          option(value="") Quận 1
+          option(value="") Quận 2
+          option(value="") Quận 12
+          option(value="") Quận Hoàng Mai
+        button(type="submit")
+          | Đăng ký ngay
+          i.mdi.mdi-send
+        
+  section.article-bottom
+    .container
+      .article-bottom-zone
+        .box
+          .title-page
+            h4 KIẾN TRÚC
+            a(href='tin-tuc.html') Xem tất cả kiến trúc
+                i.mdi.mdi-arrow-right
+
+          .box-zone
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/product-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/search.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+    
+        .box
+          .title-page
+            h4 XÂY DỰNG
+            a(href='tin-tuc.html') Xem tất cả xây dựng
+                i.mdi.mdi-arrow-right
+
+          .box-zone
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+            
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+          
+
