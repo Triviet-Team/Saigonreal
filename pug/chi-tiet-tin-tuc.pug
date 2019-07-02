@@ -1,0 +1,183 @@
+extends _inc
+
+block article
+  section.bread-crumb
+    .container
+      .bc-icons
+        nav(aria-label='breadcrumb')
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href='index.html') Trang chủ
+            li.breadcrumb-item
+              a(href='index.html') Tin tức
+            li.breadcrumb-item.active Chi tiết tin tức
+  
+  section.product-page
+    .container
+      .main
+        .news-detail
+          h3.title Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+          h5.date 16/05/2019
+          h4.desc Ngôi nhà Sài Gòn thiết kế cách điệu với phần mái cao vút như mái đình, gợi nhớ không gian quê hương Bắc Bộ của chủ nhân, đồng thời, cũng là nơi thể hiện đức tin tôn giáo.
+          img(src='../img/news-1.png')
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit iusto unde consequatur dolore nobis aliquid repellendus magnam dignissimos qui asperiores, natus ducimus quaerat ipsam optio est nisi ut praesentium.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit iusto unde consequatur dolore nobis aliquid repellendus magnam dignissimos qui asperiores, natus ducimus quaerat ipsam optio est nisi ut praesentium.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit iusto unde consequatur dolore nobis aliquid repellendus magnam dignissimos qui asperiores, natus ducimus quaerat ipsam optio est nisi ut praesentium.
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit iusto unde consequatur dolore nobis aliquid repellendus magnam dignissimos qui asperiores, natus ducimus quaerat ipsam optio est nisi ut praesentium.
+        
+        .similar-news
+          .title-page
+            h4 Tin tức liên quan
+          .similar-news-zone
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+
+            .box-news
+              .box-news-img
+                a(href='chi-tiet-tin-tuc.html')
+                  img(src='../img/news-1.png')
+              .box-news-detail
+                h4
+                  a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
+                    | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
+                h6 27/06/2019
+                      
+
+          
+    
+      .right
+        .right-search
+          .box-search-type
+            h4.active bđs bán
+            h4 bđs cho thuê
+          .box-search-form
+            input(type="text", placeholder="Nhập địa điểm, địa chỉ . . .")
+            select
+              option(value="") Loại bất động sản
+              option(value="") Nhà
+              option(value="") Đất
+              option(value="") Biệt thự
+            select
+              option(value="") Tỉnh / Thành phố
+              option(value="") TP. Hồ Chí Minh
+              option(value="") Hà Nội
+              option(value="") Đà Nẵng
+            select
+              option(value="") Quận / Huyện
+              option(value="") Quận 1
+              option(value="") Quận 2
+              option(value="") Quận 3
+            select
+              option(value="") Phường / Xã
+              option(value="") Phường An Phú
+              option(value="") Phường Mỹ Đình 2
+              option(value="") Phường Thạnh Mỹ Lợi
+            select
+              option(value="") Đường / Phố
+              option(value="") Đường Nguyễn Thái Bình
+              option(value="") Phố Huế
+              option(value="") Đường Nguyễn Thị Định
+            button(type="submit") Tìm kiếm
+          
+        .product-ward
+          .title-page
+            h4 BẤT ĐỘNG SẢN THEO QUẬN
+          .product-ward-zone
+            ul
+              li
+                a(href='san-pham.html') Bất động sản quận 1
+              li
+                a(href='san-pham.html') Bất động sản quận 2
+              li
+                a(href='san-pham.html') Bất động sản quận 3
+              li
+                a(href='san-pham.html') Bất động sản quận 4
+              li
+                a(href='san-pham.html') Bất động sản quận 5
+              li
+                a(href='san-pham.html') Bất động sản quận 6
+              li
+                a(href='san-pham.html') Bất động sản quận 7
+              li
+                a(href='san-pham.html') Bất động sản quận 8
+              li
+                a(href='san-pham.html') Bất động sản quận 9
+              li
+                a(href='san-pham.html') Bất động sản quận 10
+              li
+                a(href='san-pham.html') Bất động sản quận 11
+              li
+                a(href='san-pham.html') Bất động sản quận 12
+              li
+                a(href='san-pham.html') Bất động sản quận 13
+              li
+                a(href='san-pham.html') Bất động sản quận 14
+              li
+                a(href='san-pham.html') Bất động sản quận 15
+              li
+                a(href='san-pham.html') Bất động sản quận 16
+              li
+                a(href='san-pham.html') Bất động sản quận 17
+              li
+                a(href='san-pham.html') Bất động sản quận 18
+              li
+                a(href='san-pham.html') Bất động sản quận 19
+              li
+                a(href='san-pham.html') Bất động sản quận 20
+              li
+                a(href='san-pham.html') Bất động sản quận 21
+              li
+                a(href='san-pham.html') Bất động sản quận 22
+              li
+                a(href='san-pham.html') Bất động sản quận 23
+              li
+                a(href='san-pham.html') Bất động sản quận 23
+        
+    

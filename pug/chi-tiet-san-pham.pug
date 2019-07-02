@@ -1,0 +1,386 @@
+extends _inc
+
+block article
+  section.bread-crumb
+    .container
+      .bc-icons
+        nav(aria-label='breadcrumb')
+          ol.breadcrumb
+            li.breadcrumb-item
+              a(href='index.html') Trang chủ
+            li.breadcrumb-item
+              a(href='san-pham.html') Bất động sản bán
+            li.breadcrumb-item.active Chi tiết bất động sản
+  
+  section.product-page
+    .container
+      .main
+        .page-detail
+          h3 Bán nhà cấp 4 có gác suốt xã Bình Hưng huyện Bình Chánh tp HCM 30m² giá 650 triệu lh; 0918 998 379
+          .page-detail-info
+            h5.d-inline-block.mr-4
+              i.mdi.mdi-credit-card
+              | Giá:
+              span 750 triệu
+            h5.d-inline-block
+              i.mdi.mdi-floor-plan
+              | Diện tích: 90 m2
+            h5.d-block
+              i.mdi.mdi-map-marker-outline
+              | Địa chỉ: Bán nhà riêng tại Đường Nguyễn Văn Linh - Huyện Bình Chánh - Hồ Chí Minh  
+
+          .page-detail-desc
+            h4 Mô tả bài đăng:
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores iure saepe quis ratione labore molestias accusantium est officiis. Nihil porro minima dolore ducimus assumenda nesciunt facilis incidunt natus possimus!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores iure saepe quis ratione labore molestias accusantium est officiis. Nihil porro minima dolore ducimus assumenda nesciunt facilis incidunt natus possimus!
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maiores iure saepe quis ratione labore molestias accusantium est officiis. Nihil porro minima dolore ducimus assumenda nesciunt facilis incidunt natus possimus!
+
+          .page-detail-img
+            ul.nav.nav-tabs(role='tablist')
+              li.nav-item
+                a#photo-tab.nav-link.active(data-toggle='tab', href='#photo', role='tab', aria-controls='photo', aria-selected='true') 
+                  i.mdi.mdi-camera-image
+                  | Hình ảnh (6)
+              li.nav-item
+                a#map-tab.nav-link(data-toggle='tab', href='#map', role='tab', aria-controls='map', aria-selected='false') 
+                  i.mdi.mdi-map
+                  | Bản đồ
+
+            .tab-content
+              #photo.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='photo-tab')
+                .owl-carousel.slider-carousel.owl-theme
+                  .item(data-hash="img-1")
+                    img(src='../img/product-1.png')
+                  .item(data-hash="img-2")
+                    img(src='../img/news-1.png')
+                  .item(data-hash="img-3")
+                    img(src='../img/search.png')
+                  .item(data-hash="img-4")
+                    img(src='../img/product-1.png')
+                  .item(data-hash="img-5")
+                    img(src='../img/news-1.png')
+                  .item(data-hash="img-6")
+                    img(src='../img/search.png')
+                  
+                
+                .owl-carousel.detail-carousel.owl-theme
+                  a.item(href="#img-1")
+                    img(src='../img/product-1.png')
+                  a.item(href="#img-2")
+                    img(src='../img/news-1.png')
+                  a.item(href="#img-3")
+                    img(src='../img/search.png')
+                  a.item(href="#img-4")
+                    img(src='../img/product-1.png')
+                  a.item(href="#img-5")
+                    img(src='../img/news-1.png')
+                  a.item(href="#img-6")
+                    img(src='../img/search.png')
+                
+              #map.tab-pane.fade(role='tabpanel', aria-labelledby='map-tab')
+                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.302302682128!2d106.59276351526033!3d10.78814276192621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175326f005cf601%3A0x4b0f2e33c5eb3a87!2zQ8O0bmcgVHkgVE5ISCBTWCBUTSB2w6AgRFYgw5QgVMO0IMSQ4bqhaSBUw61u!5e0!3m2!1svi!2s!4v1562035091126!5m2!1svi!2s', width='100%', height='450', frameborder='0', style='border:0', allowfullscreen='')
+
+          .page-detail-info-bottom
+            .page-detail-info-bottom-box
+              h4 Đặc điểm bất động sản
+              table.table-bordered.table-striped.table
+                tr
+                  td Loại tin rao
+                  td
+                    b Bán nhà riêng
+                tr
+                  td Ngày đăng tin
+                  td
+                    b 27/06/2019
+                tr
+                  td Ngày hết hạn
+                  td
+                    b 04/07/2019
+                tr
+                  td Hướng nhà
+                  td
+                    b KXĐ
+
+            .page-detail-info-bottom-box
+              h4 Thông tin liên hệ
+              table.table-bordered.table-striped.table
+                tr
+                  td Tên liên lạc
+                  td
+                    b Nguyễn Phong Thái
+                tr 
+                  td Địa chỉ
+                  td
+                    b Bình Tân - Hồ Chí Minh
+                tr 
+                  td Di động
+                  td
+                    b 0989492675
+                tr
+                  td Email
+                  td
+                    b lam17k1989@gmail.com
+            
+        .similar
+          .title-page
+            h4 BẤT ĐỘNG SẢN CÙNG KHU VỰC
+          .similar-zone
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            .box-product  
+              .box-product-img(title="Kéo sang để xem ảnh tiếp theo")
+                .owl-carousel.slider-carousel.owl-theme
+                  .item
+                    img(src='../img/product-1.png')
+                  .item
+                    img(src='../img/news-1.png')
+                  .item
+                    img(src='../img/search.png')
+              .box-product-detail
+                h4 
+                  a(href='chi-tiet-san-pham.html')
+                    | Bán nhà ngõ 190 đường Hoàng Mai, 50m2, Ôtô đỗ cửa Ngày đêm, 4 phòng ngủ, Giá 4,1 tỷ
+                h5.d-inline-block
+                  i.mdi.mdi-credit-card
+                  | 
+                  span 750 triệu
+                h5.d-inline-block
+                  i.mdi.mdi-floor-plan
+                  | 90m2
+                h5.d-block
+                  i.mdi.mdi-map-marker-outline
+                  | Bình Thanh - TP.Hồ Chí Minh
+            
+            
+
+
+      .right
+        .right-search
+          .box-search-type
+            h4.active bđs bán
+            h4 bđs cho thuê
+          .box-search-form
+            input(type="text", placeholder="Nhập địa điểm, địa chỉ . . .")
+            select
+              option(value="") Loại bất động sản
+              option(value="") Nhà
+              option(value="") Đất
+              option(value="") Biệt thự
+            select
+              option(value="") Tỉnh / Thành phố
+              option(value="") TP. Hồ Chí Minh
+              option(value="") Hà Nội
+              option(value="") Đà Nẵng
+            select
+              option(value="") Quận / Huyện
+              option(value="") Quận 1
+              option(value="") Quận 2
+              option(value="") Quận 3
+            select
+              option(value="") Phường / Xã
+              option(value="") Phường An Phú
+              option(value="") Phường Mỹ Đình 2
+              option(value="") Phường Thạnh Mỹ Lợi
+            select
+              option(value="") Đường / Phố
+              option(value="") Đường Nguyễn Thái Bình
+              option(value="") Phố Huế
+              option(value="") Đường Nguyễn Thị Định
+            button(type="submit") Tìm kiếm
+          
+        .product-ward
+          .title-page
+            h4 BẤT ĐỘNG SẢN THEO QUẬN
+          .product-ward-zone
+            ul
+              li
+                a(href='san-pham.html') Bất động sản quận 1
+              li
+                a(href='san-pham.html') Bất động sản quận 2
+              li
+                a(href='san-pham.html') Bất động sản quận 3
+              li
+                a(href='san-pham.html') Bất động sản quận 4
+              li
+                a(href='san-pham.html') Bất động sản quận 5
+              li
+                a(href='san-pham.html') Bất động sản quận 6
+              li
+                a(href='san-pham.html') Bất động sản quận 7
+              li
+                a(href='san-pham.html') Bất động sản quận 8
+              li
+                a(href='san-pham.html') Bất động sản quận 9
+              li
+                a(href='san-pham.html') Bất động sản quận 10
+              li
+                a(href='san-pham.html') Bất động sản quận 11
+              li
+                a(href='san-pham.html') Bất động sản quận 12
+              li
+                a(href='san-pham.html') Bất động sản quận 13
+              li
+                a(href='san-pham.html') Bất động sản quận 14
+              li
+                a(href='san-pham.html') Bất động sản quận 15
+              li
+                a(href='san-pham.html') Bất động sản quận 16
+              li
+                a(href='san-pham.html') Bất động sản quận 17
+              li
+                a(href='san-pham.html') Bất động sản quận 18
+              li
+                a(href='san-pham.html') Bất động sản quận 19
+              li
+                a(href='san-pham.html') Bất động sản quận 20
+              li
+                a(href='san-pham.html') Bất động sản quận 21
+              li
+                a(href='san-pham.html') Bất động sản quận 22
+              li
+                a(href='san-pham.html') Bất động sản quận 23
+              li
+                a(href='san-pham.html') Bất động sản quận 23
+              

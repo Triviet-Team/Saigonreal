@@ -1,6 +1,22 @@
 extends _inc
 
 block article
+  .banner-box
+    .container
+      .banner.left
+        a(href='#') 
+          img(src='../img/banner-1.png')
+        a(href='#') 
+          img(src='../img/banner-2.png')
+
+      .banner.right
+        a(href='#') 
+          img(src='../img/banner-1.png')
+        a(href='#') 
+          img(src='../img/banner-2.png')
+    
+  
+
   section.search
     .box-search
       .box-search-type
@@ -34,7 +50,7 @@ block article
           option(value="") Phố Huế
           option(value="") Đường Nguyễn Thị Định
         button(type="submit") Tìm kiếm
-        
+
   section.article-top
     .container
       .left
@@ -316,6 +332,8 @@ block article
               .box-product-date
                 h6 27/06/2019
 
+          .product-new-more
+            h5 Hiển thị thêm
             
       .right
         .product-view
@@ -468,6 +486,7 @@ block article
                   a(href='chi-tiet-tin-tuc.html', title="Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái")
                     | Ngôi nhà thiết kế cách điệu có thể tiếp khách trên mái
                 h6 27/06/2019
+            
             
             .box-news
               .box-news-img

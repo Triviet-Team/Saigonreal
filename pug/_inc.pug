@@ -28,31 +28,35 @@ html(lang="en")
             .banner-top
               img(src='../img/banner-top.png')
             
-            .toggleMenu.d-block.d-md-none
-              i.mdi.mdi-menu
-            .search-btn.d-block.d-md-none
-              i.mdi.mdi-magnify
+            .menu-btn
+              .toggleMenu.d-block.d-lg-none
+                i.mdi.mdi-menu
+              .search-btn.d-block.d-md-none
+                i.mdi.mdi-magnify
         section.menu.wow
           .container
             .main-menu
               ul.nav
                 .nav-close
-                  i.mdi.mdi-close.d-block.d-md-none
+                  i.mdi.mdi-close.d-block.d-lg-none
                 li.nav-item
                   a.nav-link(href='index.html') Trang chủ/Home
                 li.nav-item
-                  a.nav-link(href='ban.html') BĐS Bán/Sale
+                  a.nav-link(href='san-pham.html') BĐS Bán/Sale
                 li.nav-item
-                  a.nav-link(href='cho-thue.html') BĐS Cho thuê/RENT
+                  a.nav-link(href='san-pham.html') BĐS Cho thuê/RENT
                 li.nav-item
                   a.nav-link(href='tin-tuc.html') Tin tức/NEWS
                 li.nav-item
-                  a.nav-link(href='dich-vu.html') Kiến trúc/ARCHITECTURE
+                  a.nav-link(href='tin-tuc.html') Kiến trúc/ARCHITECTURE
                 li.nav-item
-                  a.nav-link(href='xay-dung.html') Xây dựng/construction
+                  a.nav-link(href='tin-tuc.html') Xây dựng/construction
 
         .overlay-menu
 
+    .hotline
+      a(href='tel:123456789')
+        i.mdi.mdi-phone
         
     article
       block article

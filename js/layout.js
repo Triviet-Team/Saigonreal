@@ -11,35 +11,31 @@ $('.slider-carousel').owlCarousel({
   ],
 });
 
-$('.sale-carousel').owlCarousel({
-  loop: true,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  autoplayHoverPause: true,
+$('.detail-carousel').owlCarousel({
+  loop: false,
+  autoplay: false,
   dots: false,
   nav: true,
-  autoplaySpeed: 1000,
-  margin: 30,
+  margin: 10,
   navText: [
     "<i class='mdi mdi-chevron-left'></i>",
     "<i class='mdi mdi-chevron-right'></i>" 
   ],
   responsive: {
     0: {
-        items:1,
+      items:2,
     },
     575: {
-      items:2,
-      margin: 15
+      items:3,
     },
     768: {
-      items:2
+      items:3
     },
     992: {
-        items:3
+      items:4
     },
     1200: {
-        items:3
+        items:5
     }
   }
 });
@@ -55,7 +51,6 @@ $(document).ready(() => {
       $('.menu').addClass('down')
     } else {
       $('.go-top').fadeOut().css('transform','scale(0)');
-
       $('.menu').removeClass('down')
     }
   });
@@ -83,7 +78,7 @@ $(document).ready(() => {
     $('.nav').removeClass('out');
   });
 
-  $('.search .box-search-type h4').click(function() {
+  $('.box-search-type h4').click(function() {
     $('.box-search-type h4').removeClass('active');
     $(this).addClass('active');
   });
@@ -93,26 +88,71 @@ $(document).ready(() => {
   });
 
   $('.search-btn i').click(function() {
-    $('.search').toggleClass('mobile');
+    $('.search, .right-search').toggleClass('active');
     $(this).toggleClass('mdi-magnify mdi-close');
   });
 
-  $('.hot-news .box-hot-news').eq(0).addClass('first');
+  
+  function setBoxProductHeight() {
+    setInterval(() => {
+      const imgNewsWidth = $('.box-news-img img').width();
+      const imgProductWidth = $('.box-product-img img').width();
+      
+      $('.hot-news .box-hot-news').eq(0).addClass('first');
+      $('.box-news-img img').css('height', `${imgNewsWidth * 0.7}px`);
+      $('.box-product-img img').css('height', `${imgProductWidth * 0.75}px`);
+    })
+  }
 
-    const imgNewsWidth = $('.box-news-img img').width();
-    const imgProductWidth = $('.box-product-img img').width();
-
-    $('.box-news-img img').css('height', `${imgNewsWidth * 0.7}px`);
-    $('.box-product-img img').css('height', `${imgProductWidth * 0.75}px`);
-
-  setInterval(() => {
+  function setProductNewHeight() {
     const hotNewsHeight = $('.hot-news').height();
     const productViewHeight = $('.product-view').height();
     const socialHeight = $('.social').height();
     const productWardHeight = $('.product-ward').height();
-
     const productNewHeight = (productViewHeight + socialHeight + productWardHeight) - hotNewsHeight
 
     $('.product-new-zone').css('max-height', `${productNewHeight - 10}px`)
-  }, 1)
+  }
+
+  function setBannerPosition() {
+    const headerHeight = $('header').height() + $('.search').height();
+
+    $('.banner').css('top', `${headerHeight + 110}px`);
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > headerHeight) {
+        $('.banner-box').addClass('active');
+      } else {
+        $('.banner-box').removeClass('active');
+      }
+    });
+  }
+  
+  function setProductNewHeightMobile() {
+    if (windowWidth < 450) {
+      const productHeight = $('.box-product').height() * 4 + 120;
+      $('.product-new-zone').css('max-height', `${productHeight}px`)
+  
+      $('.product-new-more h5').click(() => {
+        $('.product-new-zone').css('max-height', `${productHeight * 2}px`)
+        $('.product-new-more h5').addClass('d-none')
+      });
+    };
+  }
+
+  // function setNumberForImgDetail() {
+  //   $('.main').on('click', function() {
+  //     const hash = $('.tab-content .slider-carousel .owl-item.active').find('.item').attr('data-hash');
+  //     $('.tab-content .detail-carousel .item').removeClass('active');
+  //     $('.tab-content .detail-carousel').filter(function() {
+  //       $(this).attr('href', `#${hash}`).addClass('active')
+  //     })
+  //   });
+  // }
+
+  setBoxProductHeight();
+  setProductNewHeight();
+  setBannerPosition();
+  setProductNewHeightMobile();
+  // setNumberForImgDetail();
 });

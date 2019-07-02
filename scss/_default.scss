@@ -169,13 +169,13 @@ body {
     border-radius: 3px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
-    line-height: 38px;
+    line-height: 28px;
     background: none;
     padding: 0;
-    background: #e1e1e1;
+    background: #fff;
     margin-left: 3px;
 
     &:hover,
@@ -213,12 +213,12 @@ body {
       }
 
       &:hover {
-        color: $main_color;
+        color: $sub_color;
       }
     }
 
     .breadcrumb-item.active {
-      color: $main_color;
+      color: $sub_color;
     }
   }
 }
